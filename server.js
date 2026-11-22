@@ -1,6 +1,7 @@
 // Beş İpucu sunucusu: oda, turlar, puan, jokerler, mini oyunlar. Kurallar TASARIM.md'de.
 const http = require('http'), fs = require('fs'), path = require('path'), crypto = require('crypto');
 const { WebSocketServer } = require('ws');
+const miniSirasi = require('./plan.js');
 
 const KOK = __dirname, PORT = +process.env.PORT || 3480;
 const oku = f => JSON.parse(fs.readFileSync(path.join(KOK, f)));
@@ -84,16 +85,10 @@ function oyunBaslat() {
   oda.kelimeler.forEach(k => kullanilan.add(k.kelime));
   for (const o of oda.oyuncular.values()) { o.puan = 0; o.jokerler = []; o.etki = bosEtki(); o.ist = bosIst(); o.donma = null; o.donmaBekliyor = null; }
   oda.salon = {};
-  // mini oyunlar eşit aralıklarla, hangisinin geleceği rastgele, aynı oyun art arda gelmez
+  // mini oyunlar eşit aralıklarla; sıra plan.js'te: dengeli dağılır, aynı oyun art arda gelmez
   oda.plan = {};
   const m = oda.ayar.miniler.length ? Math.min(oda.ayar.miniSayi, n / 5 | 0) : 0;
-  let onceki = null;
-  for (let k = 1; k <= m; k++) {
-    const turdan = Math.round(k * n / (m + 1));
-    const secenek = oda.ayar.miniler.filter(a => a !== onceki || oda.ayar.miniler.length === 1);
-    onceki = secenek[Math.random() * secenek.length | 0];
-    oda.plan[turdan] = onceki;
-  }
+  miniSirasi(oda.ayar.miniler, m).forEach((ad, i) => { oda.plan[Math.round((i + 1) * n / (m + 1))] = ad; });
   oda.turNo = 0; oda.son = null;
   // yükleme ekranı: telefonlar ilk iki turun seslerini hazırlayıp "hazır" der, oyun herkes hazır olunca
   // ya da en geç YUKLEME_MS sonra başlar. Kalan turların sesleri arka planda iner (yalnız dosya, çözülmeden).

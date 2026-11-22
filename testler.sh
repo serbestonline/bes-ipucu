@@ -12,6 +12,7 @@ kos test.js "TEST=1 TUR_MS=3000 ARA_MS=300"
 kos test-salon.js "TEST=1 TUR_MS=3000 ARA_MS=300"
 dur
 node test-catlak-tas.js || HATA=1
+node test-plan.js || HATA=1
 node test-dondur.js || HATA=1   # kendi sunucusunu açar
 rm -f istatistik.jsonl
 exit $HATA

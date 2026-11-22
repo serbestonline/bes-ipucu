@@ -4,7 +4,7 @@
 - Host Mac'te sunucu, Cloudflare geçici tüneliyle dışarı açılır; oyuncular telefondan girer.
 - Oda kurulurken: kelime sayısı (10 / 20 / 50 / 100), mini oyun sayısı (en fazla kelime sayısının beşte biri: 2 / 4 / 10 / 20) ve hangi mini oyunların olacağı seçilir.
 - Mini oyunlar eşit tur aralıklarıyla gelir.
-- Hangi mini oyunun geleceği seçilenler arasından rastgele belirlenir; sayı seçilen oyun sayısını aşarsa tekrar eder ama aynı oyun art arda gelmez.
+- Mini oyun sırası seçilenler karılarak belirlenir: seçilenlerin hepsi oynanmadan hiçbiri tekrar etmez (5 oyun seçili ve 10 mini oyun varsa her biri tam 2 kez gelir) ve aynı oyun art arda gelmez.
 - Tünel (sunucu) açık kaldıkça aynı kelime bir daha gelmez.
 
 ## Tur
