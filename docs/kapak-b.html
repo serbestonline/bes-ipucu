@@ -1,0 +1,50 @@
+<!doctype html><html lang="tr"><head><meta charset="utf-8"><title>Beş İpucu kapak</title><style>
+:root { --z: #14111c; --sari: #ffcf4a; --kirmizi: #ff5d5d; --mavi: #4fb3ff; --yesil: #5ee07a; --mor: #c77dff; }
+* { box-sizing: border-box; }
+body { margin: 0; background: #0c0a12; color: #f3eefc; font-family: -apple-system, system-ui, sans-serif; padding: 28px; }
+h1 { font-size: 20px; margin: 0 0 4px; } p.not { color: #a99fc0; margin: 0 0 24px; }
+.taslak { margin-bottom: 40px; } .taslak h2 { font-size: 16px; margin: 0 0 10px; color: var(--sari); }
+.kapak { width: 960px; height: 400px; border-radius: 22px; overflow: hidden; position: relative; background: radial-gradient(ellipse at 50% 120%, #3a2a5c, var(--z) 65%); }
+.yazi { font-family: 'Arial Black', Arial, sans-serif; font-weight: 900; font-style: italic; color: #fff; paint-order: stroke; -webkit-text-stroke: 10px #14111c; letter-spacing: -1px; }
+.yazi span { color: var(--sari); }
+/* A: beş ampul */
+.a .yazi { position: absolute; left: 0; right: 0; top: 56px; text-align: center; font-size: 96px; transform: rotate(-4deg); animation: zipla 2s ease-in-out infinite; }
+.a .ampuller { position: absolute; left: 0; right: 0; top: 222px; display: flex; justify-content: center; gap: 46px; }
+.a .ampul { width: 92px; height: 92px; border-radius: 50%; background: #2d2640; display: grid; place-items: center; font-size: 40px; font-weight: 900; color: #5a5170; position: relative; animation: yak 6s infinite; }
+.a .ampul::after { content: ''; position: absolute; inset: -14px; border-radius: 50%; border: 3px solid currentColor; opacity: 0; animation: dalga 6s infinite; animation-delay: inherit; }
+.a .ampul:nth-child(1) { animation-delay: 0s; } .a .ampul:nth-child(2) { animation-delay: .9s; } .a .ampul:nth-child(3) { animation-delay: 1.8s; } .a .ampul:nth-child(4) { animation-delay: 2.7s; } .a .ampul:nth-child(5) { animation-delay: 3.6s; }
+@keyframes yak { 0%, 4% { background: #2d2640; color: #5a5170; transform: scale(1); } 8% { background: var(--sari); color: #1c1606; transform: scale(1.18); box-shadow: 0 0 40px var(--sari); } 14%, 80% { background: var(--sari); color: #1c1606; transform: scale(1); box-shadow: 0 0 24px #ffcf4a88; } 90%, 100% { background: #2d2640; color: #5a5170; box-shadow: none; } }
+@keyframes dalga { 6% { opacity: .9; transform: scale(.9); } 20% { opacity: 0; transform: scale(1.6); } }
+@keyframes zipla { 50% { transform: rotate(-4deg) translateY(-6px) scale(1.02); } }
+.a .cevap { position: absolute; left: 0; right: 0; bottom: 26px; display: flex; justify-content: center; gap: 8px; }
+.a .cevap b { width: 44px; height: 50px; border-radius: 8px; background: #f3e6c4; color: #2a2010; display: grid; place-items: center; font-size: 26px; font-weight: 900; box-shadow: 0 4px 0 #b49a5c; transform: rotateX(90deg); animation: cevir 6s infinite; }
+.a .cevap b:nth-child(2) { animation-delay: .08s; } .a .cevap b:nth-child(3) { animation-delay: .16s; } .a .cevap b:nth-child(4) { animation-delay: .24s; } .a .cevap b:nth-child(5) { animation-delay: .32s; } .a .cevap b:nth-child(6) { animation-delay: .4s; }
+@keyframes cevir { 0%, 72% { transform: rotateX(90deg); } 77%, 92% { transform: rotateX(0); } 97%, 100% { transform: rotateX(90deg); } }
+/* B: konuşma balonları */
+.b .yazi { position: absolute; right: 50px; top: 120px; font-size: 104px; line-height: .92; text-align: right; transform: rotate(-6deg); }
+.b .balon { position: absolute; left: 60px; padding: 12px 20px; border-radius: 22px; background: #fff; color: #14111c; font-weight: 800; font-size: 20px; opacity: 0; transform-origin: 0 100%; animation: balon 7s infinite; box-shadow: 0 6px 0 #0005; }
+.b .balon::after { content: ''; position: absolute; left: 22px; bottom: -12px; border: 8px solid transparent; border-top: 12px solid #fff; }
+.b .balon i { font-style: normal; color: var(--kirmizi); margin-right: 8px; }
+.b .balon:nth-of-type(1) { top: 26px; animation-delay: 0s; } .b .balon:nth-of-type(2) { top: 94px; left: 90px; animation-delay: .8s; } .b .balon:nth-of-type(3) { top: 162px; animation-delay: 1.6s; }
+.b .balon:nth-of-type(4) { top: 230px; left: 90px; animation-delay: 2.4s; } .b .balon:nth-of-type(5) { top: 298px; animation-delay: 3.2s; background: var(--sari); }
+.b .balon:nth-of-type(5)::after { border-top-color: var(--sari); }
+@keyframes balon { 0% { opacity: 0; transform: scale(.3); } 5% { opacity: 1; transform: scale(1.08); } 8%, 85% { opacity: 1; transform: scale(1); } 92%, 100% { opacity: 0; transform: scale(.8); } }
+.b .ses { position: absolute; right: 70px; top: 40px; display: flex; gap: 6px; align-items: center; height: 60px; }
+.b .ses i { width: 8px; border-radius: 4px; background: var(--mavi); animation: ses .5s ease-in-out infinite alternate; }
+.b .ses i:nth-child(odd) { background: var(--yesil); animation-duration: .35s; }
+@keyframes ses { from { height: 8px; } to { height: 56px; } }
+/* C: harf yağmuru ve eriyen puan */
+.c .tas { position: absolute; width: 74px; height: 84px; border-radius: 12px; background: #f3e6c4; color: #2a2010; display: grid; place-items: center; font-family: 'Arial Black', Arial; font-size: 46px; font-weight: 900; box-shadow: 0 7px 0 #b49a5c; top: -120px; animation: dus 5s cubic-bezier(.3, 1.4, .5, 1) infinite; }
+@keyframes dus { 0% { top: -120px; transform: rotate(var(--r)); } 18%, 82% { top: var(--y); transform: rotate(var(--r2)); } 100% { top: 460px; transform: rotate(var(--r)); } }
+.c .puan { position: absolute; right: 54px; bottom: 34px; font-family: 'Arial Black'; font-size: 64px; font-weight: 900; color: var(--sari); text-align: right; }
+.c .puan small { display: block; font-size: 15px; color: #a99fc0; font-family: system-ui; font-weight: 600; }
+.c .cubuk { position: absolute; left: 54px; right: 260px; bottom: 54px; height: 14px; border-radius: 7px; background: #2d2640; overflow: hidden; }
+.c .cubuk div { height: 100%; background: var(--sari); transform-origin: left; animation: eri 5s linear infinite; }
+@keyframes eri { from { transform: scaleX(1); } to { transform: scaleX(0); } }
+.c .ipucu { position: absolute; left: 54px; bottom: 82px; color: #a99fc0; font-weight: 700; font-size: 18px; }
+
+body { padding: 0; background: #14111c; } .kapak { border-radius: 0; }</style></head><body><div class="kapak b">
+  <div class="balon"><i>1</i>Dilim mor renklidir…</div><div class="balon"><i>2</i>Boynumda yedi omur var…</div><div class="balon"><i>3</i>Doğarken yere düşerim…</div>
+  <div class="balon"><i>4</i>Akasya yapraklarını yerim…</div><div class="balon"><i>5</i>En uzun boylu hayvanım!</div>
+  <div class="ses"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="yazi">BEŞ<br><span>İPUCU</span></div></div></body></html>

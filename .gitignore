@@ -1,0 +1,27 @@
+# bağımlılıklar ve Python ortamları
+node_modules/
+.venv*/
+.DS_Store
+# ipucu sesleri repoda tutulmaz; python3 ses/uret.py ile üretilir
+ses/ahmet/
+ses/deneme/
+ses/deneme.py
+ses/chatterbox*
+ses/dinle.html
+# indirilen ham ses paketleri (seçilenler public/efekt'te)
+ses-kaynak/indir/
+# kelime seti üretiminin ara dosyaları
+kelimeler/parca-*
+kelimeler/carbon-*
+kelimeler/carbon.sh
+kelimeler/elle.json
+kelimeler/sozluk/zemberek-master-dictionary.dict
+# oyun istatistiği (oyuncu adları içerir) ve kişisel yayın betiği
+istatistik.jsonl
+yayinla.sh
+# tasarım taslakları ve çalışma ekran görüntüleri
+docs/ekran/
+docs/kapanis-secenek.html
+docs/kapak-taslak.html
+docs/tur-taslak.html
+docs/zipla-seritler.png

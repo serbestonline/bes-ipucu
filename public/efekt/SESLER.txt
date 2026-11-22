@@ -1,0 +1,19 @@
+Beş İpucu ses kütüphanesi. Buradaki her ses ya CC0 (kamu malı) ya da bu proje için sıfırdan üretildi;
+hiçbiri için izin ya da isim belirtme gerekmez. Yeni ses eklenirken yalnız CC0 kaynak kullanılır.
+
+kazan.mp3, sira.mp3, tik.mp3, sure-bitti.mp3
+    Kenney, Music Jingles (jingles_SAX03) ve Interface Sounds (confirmation_002, tick_002, error_004). CC0.
+muzik.mp3
+    "Vintage Menu", iamoneabe. https://opengameart.org/content/vintage-menu  CC0.
+
+kutuphane/arayuz/     Kenney, Interface Sounds (100 ses). https://opengameart.org/content/interface-sounds  CC0
+kutuphane/arayuz-b/   Kenney, UI Audio (51 ses). https://opengameart.org/content/51-ui-sound-effects-buttons-switches-and-clicks  CC0
+kutuphane/dijital/    Kenney, Digital Audio (62 ses). https://opengameart.org/content/63-digital-sound-effects-lasers-phasers-space-etc  CC0
+kutuphane/jingle/     Kenney, Music Jingles (85 kısa müzik: HIT, NES, PIZZA, SAX, STEEL). https://opengameart.org/node/22000  CC0
+    Hepsi 22 Kasım 2026'da OpenGameArt'tan indirildi, MP3'e çevrildi (mono, 96 kbps).
+    İlk iki paketin içindeki lisans dosyası CC0 diyor; Digital ve UI paketlerinin içinde lisans dosyası yok,
+    CC0 olduğu OpenGameArt sayfalarında yazıyor.
+
+toren/trampet-kisa.mp3, trampet-uzun.mp3, trampet-zil.mp3, zil.mp3
+    Bu proje için sıfırdan sentezlendi (gürültü ve sinüs dalgasından, hiçbir kayda dayanmaz).
+    Üreten betik: ses-kaynak/uret/trampet.py

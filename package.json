@@ -1,0 +1,16 @@
+{
+  "name": "bes-ipucu",
+  "version": "1.0.0",
+  "description": "Beş İpucu: telefondan oynanan, sesli ipuçlu Türkçe kelime tahmin ve mini oyun parti oyunu",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "./testler.sh"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "three": "^0.170.0",
+    "ws": "^8.23.0"
+  },
+  "private": true
+}

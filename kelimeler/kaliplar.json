@@ -1,0 +1,62 @@
+[
+  {"kelime":"zürafa","kabul":["zürafa"],"kategori":"Hayvanlar ve bitkiler","zorluk":1,"ipuclari":[
+    "Dilim mor renklidir ve neredeyse yarım metre uzunluğundadır.",
+    "Boynumda da senin boynundaki kadar, yedi omur var.",
+    "Doğarken bir buçuk metre yüksekten yere düşerim.",
+    "Akasya ağaçlarının en tepedeki yapraklarını yerim.",
+    "Karada yaşayan en uzun boylu hayvanım."]},
+  {"kelime":"ahtapot","kabul":["ahtapot"],"kategori":"Hayvanlar ve bitkiler","zorluk":2,"ipuclari":[
+    "Kanım mavidir, çünkü oksijeni bakır taşır.",
+    "Üç kalbim var.",
+    "Sinir hücrelerimin çoğu beynimde değil, kollarımda.",
+    "Tehlikede mürekkep püskürtüp kaçarım.",
+    "Sekiz kolum var ve denizde yaşarım."]},
+  {"kelime":"şemsiye","kabul":["şemsiye"],"kategori":"Yiyecek, içecek ve eşyalar","zorluk":1,"ipuclari":[
+    "Eski Mısır'da firavunları ve rahipleri güneşten korurdum.",
+    "Kayıp eşya bürolarında en sık bulunan eşyalardanım.",
+    "Klasik modellerimde sapım baston gibi kıvrıktır.",
+    "Sert rüzgarda ters dönüp bozulabilirim.",
+    "Yağmur yağınca açılırım, seni ıslanmaktan korurum."]},
+  {"kelime":"kahve","kabul":["kahve"],"kategori":"Yiyecek, içecek ve eşyalar","zorluk":1,"ipuclari":[
+    "Efsaneye göre beni keçilerinin neşesinden şüphelenen bir çoban buldu.",
+    "Osmanlı'da adıma açılan mekanlar sohbetin merkezi oldu.",
+    "Çekirdeklerim kavrulur ve öğütülür.",
+    "Türk usulü pişince telvem fincanda kalır, falıma bakılır.",
+    "Bir fincanımın kırk yıl hatırı vardır."]},
+  {"kelime":"pusula","kabul":["pusula"],"kategori":"Bilim, beden, teknoloji ve meslekler","zorluk":2,"ipuclari":[
+    "İlk örneklerimi Çinliler yön bulmak için değil, kehanet için kullandı.",
+    "İçimdeki ibre dünyanın manyetik alanına göre döner.",
+    "Denizciler yüzyıllarca yollarını benimle buldu.",
+    "Üzerimde ana yönlerin baş harfleri yazar.",
+    "İğnem manyetik kuzeyi gösterir."]},
+  {"kelime":"Kapadokya","kabul":["Kapadokya"],"kategori":"Yerler, doğa ve gökyüzü","zorluk":2,"ipuclari":[
+    "Kayalarım milyonlarca yıl önce püsküren volkanların küllerinden oluştu.",
+    "Katlar boyunca yerin altına inen şehirlerim var.",
+    "Kayalara oyulmuş kiliselerim ve evlerim var.",
+    "Peri bacalarımla ünlüyüm.",
+    "Gün doğumunda gökyüzüm sıcak hava balonlarıyla dolar."]},
+  {"kelime":"Satürn","kabul":["Satürn"],"kategori":"Yerler, doğa ve gökyüzü","zorluk":2,"ipuclari":[
+    "Ortalama yoğunluğu sudan düşük olan tek gezegenim.",
+    "Romalıların tarım tanrısının adını taşırım.",
+    "Titan adında, atmosferi olan büyük bir uydum var.",
+    "Güneş'ten uzaklık sırasında altıncı gezegenim.",
+    "Etrafımı saran halkalarla tanınırım."]},
+  {"kelime":"satranç","kabul":["satranç"],"kategori":"Kültür, sanat, spor ve kavramlar","zorluk":1,"ipuclari":[
+    "Kökenim Hindistan'daki çaturanga adlı oyuna dayanır.",
+    "Piyonlarım karşı tarafın son sırasına ulaşınca terfi eder.",
+    "Normal hamlelerde yalnız atlarım diğer taşların üstünden atlar.",
+    "Altmış dört kareli bir tahtada oynanırım.",
+    "Şah mat olunca oyunum biter."]},
+  {"kelime":"deprem","kabul":["deprem","zelzele"],"kategori":"Yerler, doğa ve gökyüzü","zorluk":1,"ipuclari":[
+    "Japon efsanelerinde beni Namazu adlı dev bir yayın balığı yapar.",
+    "Sismograflar beni kaydeder.",
+    "Fay hatları boyunca meydana gelirim.",
+    "Ardımdan günlerce artçılarım gelebilir.",
+    "Geldiğimde çök, kapan, tutun hareketini yaparsın."]},
+  {"kelime":"nostalji","kabul":["nostalji"],"kategori":"Kültür, sanat, spor ve kavramlar","zorluk":3,"ipuclari":[
+    "Adım Yunancada eve dönüş ve acı sözcüklerinden gelir.",
+    "On yedinci yüzyılda askerlerde görülen bir hastalık sanılırdım.",
+    "Eski bir şarkı ya da tanıdık bir koku beni uyandırabilir.",
+    "Eski fotoğraflara bakarken hissedilirim.",
+    "Geçmişe duyulan tatlı bir özlemim."]}
+]

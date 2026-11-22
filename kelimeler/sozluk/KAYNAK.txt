@@ -1,0 +1,4 @@
+zemberek-master-dictionary.dict: Zemberek-NLP projesinin Türkçe sözlüğü (Ahmet A. Akın, Mehmet D. Akın).
+https://github.com/ahmetaa/zemberek-nlp  Lisans: Apache 2.0 (ZEMBEREK-LICENSE.txt). 22 Kasım 2026'da indirildi.
+kelimeler/sozluk.json bu dosyadan türetildi: tek kelimelik girişler, özel ad, kısaltma ve noktalama hariç (26.611 kelime).
+Karışık Harfler'de aynı harflerle kurulan her gerçek kelimeyi kabul etmek için kullanılır.
